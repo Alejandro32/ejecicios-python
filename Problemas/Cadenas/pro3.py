@@ -1,19 +1,21 @@
-import os
 pro=0
 
-print("\n\n\n 3. Joel se da cuenta que su algoritmo quedo genial"
-      " y quiere que más gente lo utilice, el problema es que "
-      " algunos de sus compañeros no llevan las mismas materias "
-      " que él, ¿podrías ayudarlo a modificar su algoritmo para "
-      " solucionar ese inconveniente? \n")
 
-mat=int(input("Ingresa El numero de Materias a promediar___"))
-alum=input("Ingresa El Nombre del alumno a promediar___")
-for i in range(0,mat):
+passw=input("Ingrese su Frase______")
+num=len(passw)
+passwor=passw;
 
-   numero=int(input("Ingresa las calificaciones___"))
-   pro=pro+numero
-   os.system('clear')
+for i in range(0,len(passw)):
+ 
+ if passw[i]==" ":
+  passw=passw.replace(" ","_")
+ 
+
+ 
 
 
-print("El promedio de ",alum," es ________",round(pro/mat,2)) 
+print("3. Joel quiere hacer un programa que reciba una frase, cambie los espacios por un guión bajo "
+	" y al final imprima la frase original y la alterada solo para corroborar resultados."
+	"\n Frase Normal--------->" , passwor ,  "\n Frase Modificada----->" , passw)
+
+

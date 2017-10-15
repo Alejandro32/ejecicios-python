@@ -1,37 +1,34 @@
 
 num=0
 
-print("\n\n\n 1. Anuar quiere hacer sus contraseñas más seguras, se da cuenta que puede cambiar vocales por números"
-      " a = 4, e = 3, i = 1, o = 0. ¿Podrías hacer un programa que reciba una contraseña, la altere sustituyendo las "
-      " vocales y al final la imprima?\n")
+
 
 passw=input("Ingrese su password______")
 num=len(passw)
-lista=[passw]
 
-"""
-for i in passw:
- cade=i
 
- if not cade == "a" and cade == "A":
-  m=4
-  print("infreso",m)
- elif cade == "e" and cade == "E":
-  m=3
-  print("infreso",m)
- elif cade == "i" and cade == "I":
-  m=1
-  print("infreso",m)
- elif cade == "o" and cade == "O":
-  m=0
-  print("infreso",m)
-
-pasw1[i]=arra[3]
-"""
-separador=str(4)
-lista=[separador.join(lista[3])]
-print(lista)
-
-  	 
-  	 
+for i in range(0,len(passw)):
  
+ if passw[i]=="a" or  passw[i]=="A":
+  passw=passw.replace("a","4")
+  passw=passw.replace("A","4")
+ 
+
+ elif passw[i]=="e" or passw[i]=="E":
+  passw=passw.replace("e","3")
+  passw=passw.replace("E","3")
+ 
+
+ elif passw[i]=="i" or passw[i]=="I":
+  passw=passw.replace("I","1")
+  passw=passw.replace("i","1")
+
+ elif passw[i]=="o" or passw[i]=="O":
+  passw=passw.replace("O","0")
+  passw=passw.replace("o","0")
+
+
+
+print("\n\n\n 1. Anuar quiere hacer sus contraseñas más seguras, se da cuenta que puede cambiar vocales por números"
+      " a = 4, e = 3, i = 1, o = 0. ¿Podrías hacer un programa que reciba una contraseña, la altere sustituyendo las "
+      " vocales y al final la imprima?\n","La contaseña modificada es  ",passw)
